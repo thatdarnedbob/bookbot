@@ -7,7 +7,7 @@ def main():
     print("--- Begin report of books/frankenstein.txt ---")
 
     wc = count_words(text)
-    print(f"{wc} words found in document\n")
+    print(f"{wc} words found in the document\n")
 
     cc = count_characters(text)
     print_chars(cc)
