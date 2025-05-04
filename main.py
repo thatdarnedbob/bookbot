@@ -1,7 +1,15 @@
 from stats import *
+import sys
 
 def main():
-    book_path = "books/frankenstein.txt"
+
+    bookargs = sys.argv
+
+    if len(bookargs) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+
+    book_path = bookargs[1]
     text = get_book_text(book_path)
     
     print("--- Begin report of books/frankenstein.txt ---")
